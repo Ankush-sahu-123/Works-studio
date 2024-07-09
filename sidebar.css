@@ -1,0 +1,111 @@
+button{
+    background-color: transparent;
+    border: none;
+}
+
+#sidebar{
+    display:none;
+    z-index: 100;
+}
+
+#main-box{
+    position:relative;
+    height:100vh;
+    width: 100%;
+    background-color: #ffffff;
+    min-height: 100vh;
+    min-width: 100vw;
+    display:flex;
+    justify-content:end;
+}
+
+
+#main-box .slide{
+    color: #000000;
+}
+
+#main-box #side-bar_menu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    /* background:rgba(255,255,255,0.1); */
+    box-shadow: 0 0 6px rgba(46, 45, 45, 0.5);
+}
+
+#side-bar_menu .menu{
+position: absolute;
+top:80px;
+width: 100%;
+}
+
+#side-bar_menu .menu li{
+    list-style-type: none;
+    margin-top: 6px;
+    padding:14px 20px;
+    transition: all 0.2s linear;
+}
+
+#side-bar_menu .menu i{
+    color: #000000;
+    font-size: 20px;
+    padding-right: 8px;
+}
+
+#side-bar_menu .menu a{
+    color: #000000;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#side-bar_menu .menu li:hover{
+    border-radius: 15px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+#side-bar_menu .social_media{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    cursor: pointer;
+}
+
+.social_media {
+    display: inline-flex;
+    color: #fff;
+}
+
+.facebook a{
+    opacity: 0.5;
+}
+.youtube a{
+    margin:0 1vh;
+    opacity: 0.5;
+}
+.xcom a{
+    margin:0 1vh 0 0;
+    opacity: 0.5;
+}
+.insta a{
+    opacity: 0.5;
+}
+.facebook :hover{
+    opacity:1;
+    fill:rgb(128, 168, 255);
+    transition: all 0.1s linear;
+}
+.youtube :hover{
+    opacity:1;
+    fill:rgb(255, 0, 0);
+    transition: all 0.1s linear;
+}
+.xcom :hover{
+    opacity:1;
+    fill:rgb(0, 0, 0);
+    transition: all 0.1s linear;
+}
+.insta :hover{
+    opacity:1;
+    fill: rgb(255, 0, 128);
+    transition: all 0.1s linear;
+}
